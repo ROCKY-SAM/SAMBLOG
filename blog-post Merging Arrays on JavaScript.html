@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sam's Blog</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-7.css">
+</head>
+
+<body>
+    <header class="header text-center">
+        <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Sam's Blog</a></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+            <div id="navigation" class="collapse navbar-collapse flex-column">
+                <div class="profile-section pt-3 pt-lg-0">
+                    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image">
+                    <div class="bio mb-3">Hey, I’m Sam.<br> Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. Well-versed in technology and writing code to create systems
+                        that are reliable and user-friendly.|<br><a href="https://rocky-sam.github.io/">Find out
+								more about me</a></div>
+                    <!--//bio-->
+                    <ul class="social-list list-inline py-3 mx-auto">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/sameera-abeysekara-453b6a76/"><i
+										class="fab fa-linkedin-in fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/ROCKY-SAM"><i
+										class="fab fa-github-alt fa-fw"></i></a></li>
+                    </ul>
+                    <!--//social-list-->
+                    <hr>
+                </div>
+                <!--//profile-section-->
+                <ul class="navbar-nav flex-column text-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span
+									class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Post</a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+                    </li>
+                </ul>
+                <!-- 
+                <div class="my-2 my-md-3">
+                    <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <article class="blog-post px-3 py-5 p-md-5">
+            <div class="container">
+                <header class="blog-post-header">
+                    <h2 class="title mb-2">Merging Arrays on JavaScript</h2>
+                    <div class="meta mb-3"><span class="date">Published 2020/01/10</span></div>
+                </header>
+                <div class="blog-post-body">
+				
+					
+
+<p style=''><span style='font-size:16px;'>In this article we&rsquo;ll explore types of JavaScript array merging.</span></p>
+
+<p style=''><strong><span style='font-size:18px;'>Array Concat</span></strong></p>
+
+<p style=''><span style='font-size:16px;'>The concat method allows you to take an array, combine it with another array, and return a new array.</span></p>
+
+<p style=''><em><span style='font-size:16px;'>const arrayOne = [&lsquo;a&rsquo;, &lsquo;b&rsquo;, &lsquo;c&rsquo;];<br> const arrayTwo = [&lsquo;d&rsquo;, &lsquo;e&rsquo;, &lsquo;f&rsquo;];<br>&nbsp;const arrayJoin = arrayOne.concat(arrayTwo);</span></em></p>
+
+<p style=''><em><span style='font-size:16px;'>console.log(arrayJoin); //[&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;, &ldquo;d&rdquo;, &ldquo;e&rdquo;, &ldquo;f&rdquo;]</span></em></p>
+
+<p style=''><strong><span style='font-size:18px;'>The Spread&nbsp;Operator</span></strong></p>
+
+<p style=''><span style='font-size:16px;'>Spread operator comes with JavaScript ES6, ES6 spread operator helps to create a shallow copy.</span></p>
+
+<p style=''><em><span style='font-size:16px;'>const arrayOne = [&lsquo;a&rsquo;, &lsquo;b&rsquo;, &lsquo;c&rsquo;];<br>&nbsp;const arrayTwo = [&lsquo;d&rsquo;, &lsquo;e&rsquo;, &lsquo;f&rsquo;];</span></em></p>
+
+<p style=''><em><span style='font-size:16px;'>console.log([&hellip;arrayOne,&hellip;arrayTwo]);//[&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;, &ldquo;d&rdquo;, &ldquo;e&rdquo;, &ldquo;f&rdquo;]</span></em></p>
+
+<p style=''><strong><span style='font-size:18px;'>Array Push</span></strong></p>
+
+<p style=''><span style='font-size:16px;'>Above 2 methods, contact and spread operator join arrays and create new array without changing existing arrays but this push method change existing array without creating new array. if user want to add array to another array with out creating new array this is the method to use.</span></p>
+
+<p style=''><em><span style='font-size:16px;'>const arrayOne = [&lsquo;a&rsquo;, &lsquo;b&rsquo;, &lsquo;c&rsquo;];<br>&nbsp;const arrayTwo = [&lsquo;d&rsquo;, &lsquo;e&rsquo;, &lsquo;f&rsquo;];</span></em></p>
+
+<p style=''><em><span style='font-size:16px;'>arrayOne.push(&hellip;arrayTwo);</span></em></p>
+
+<p style=''><em><span style='font-size:16px;'>console.log(arrayOne);//[&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;, &ldquo;d&rdquo;, &ldquo;e&rdquo;, &ldquo;f&rdquo;]</span></em></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";'>&nbsp;</p>
+
+					
+                </div>
+            </div>
+            <!--//container-->
+        </article>
+        <footer class="footer text-center py-2 theme-bg-dark">
+            <small class="copyright">Sameera Madushanka Abeysekara</small>
+        </footer>
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>
+
+</body>
+
+</html>
